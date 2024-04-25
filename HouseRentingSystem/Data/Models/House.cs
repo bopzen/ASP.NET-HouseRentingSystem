@@ -43,8 +43,8 @@ namespace HouseRentingSystem.Data.Models
         public virtual Agent Agent { get; set; } = null!;
 
         [ForeignKey(nameof(Renter))]
-        public int RenderId { get; set; }
-        public IdentityUser Renter { get; set; } = null!;
+        public string? RenterId { get; set; } = null!;
+        public IdentityUser? Renter { get; set; } = null!;
 
     }
 }

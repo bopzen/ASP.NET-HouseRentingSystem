@@ -16,7 +16,7 @@ namespace HouseRentingSystem.Data.Models
 
         [Required]
         [ForeignKey(nameof(User))]
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         public IdentityUser User { get; set; } = null!;
     }
 }
